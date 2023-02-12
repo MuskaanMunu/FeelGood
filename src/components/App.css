@@ -1,0 +1,62 @@
+/**************************************************************************/
+/*****************************    Global    *******************************/
+/**************************************************************************/
+
+body {
+	background: #0e201f;
+	color: rgb(236, 236, 236);
+	overflow-x: hidden;
+}
+
+.glass_effect {
+	background: hsla(0, 100%, 100%, 0.06) !important;
+	backdrop-filter: blur(36px);
+}
+
+.glass_effect_border {
+	border: 2.3px solid hsla(0, 0%, 100%, 0.2) !important;
+}
+
+.cursor_ptr {
+	cursor: pointer;
+}
+
+.green_text {
+	color: #360927;
+	font-family: var(--Poppins);
+}
+
+a[disabled] {
+	color: gray;
+}
+
+a[disabled]:hover {
+	color: gray;
+	animation: none;
+	cursor: not-allowed;
+}
+
+a:hover {
+	color: #cebd72 !important;
+}
+
+/* Scroll bar width */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(13, 13, 13);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+	background: rgb(207,181,60);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(207,181,60);
+}

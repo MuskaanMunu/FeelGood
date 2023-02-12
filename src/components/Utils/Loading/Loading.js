@@ -1,0 +1,18 @@
+import React, { Fragment } from "react";
+import "./loading.css";
+
+export default function LoadingSongInfo() {
+	return (
+		<Fragment>
+			<div className="loading_song_info_container">
+				<div className="loading_song_info_box glass_effect glass_effect_border">
+					<div className="loadingSpinner"></div>
+					{/* <div className="classic-7"></div> */}
+					<div className="row p-0 m-0 mt-5">
+						<div className="col p-0 m-0 mt-5 wait_text">Talking to blockchain! Please be patient.</div>
+					</div>
+				</div>
+			</div>
+		</Fragment>
+	);
+}

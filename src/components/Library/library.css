@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--Poppins: "Poppins", sans-serif;
+	--Roboto: "Roboto", sans-serif;
+}
+
+/**************************************************************************/
+/*****************************    Library    ******************************/
+/**************************************************************************/
+
+.library_container {
+	width: 100vw;
+	background-image: url("../../assets/hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	padding-top: 120px;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+.library_box {
+	width: 90%;
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.library_card {
+	width: 98%;
+	border-radius: 16px;
+	padding: 25px;
+	/* text-align: center; */
+	margin-bottom: 60px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+}
+
+.left_filters_section {
+	text-align: left;
+	font-family: var(--Poppins);
+	/* make left filter section grow fully */
+	flex: 2;
+}
+
+.mxv_library_heading {
+	font-weight: 500;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+}
+
+.library_filters {
+	font-weight: 500;
+	font-size: 0.82rem;
+	margin-bottom: 8px;
+}
+
+.library-dropdowns {
+	display: flex;
+	/* align-items: center; */
+}
+
+.single-dropdowns {
+	min-width: 273px !important;
+}
+
+.right_filters_section {
+	text-align: right;
+	font-family: var(--Poppins);
+}
+
+.search_bar_div {
+	/* Fixed the overlapping search text issue */
+	display: flex;
+	border-radius: 20px;
+	border: 1px solid rgba(227, 227, 227, 0.35) !important;
+	padding-right: 5px;
+}
+
+.search_bar {
+	padding: 6px 12px;
+	width: 200px;
+	background: none;
+	font-size: 0.8rem;
+	font-weight: 400;
+	color: #000;
+	border: none;
+	outline: none;
+}
+
+.search_bar_div:focus-within {
+	border: 1px solid #000 !important;
+}
+
+.search_bar_div:focus-within .search_button {
+	color: #000 !important;
+}
+
+::placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #ffffff;
+}
+
+.search_button {
+	background: none;
+	outline: none;
+	border: none;
+	color: #000;
+}
+
+.additional_filters {
+	margin-bottom: 0px;
+	font-family: var(--Poppins);
+	font-size: 0.85rem;
+	font-weight: 500;
+	margin-right: 10px;
+}
+
+.additional_filters i {
+	margin-left: 10px;
+	color: #000;
+}
+
+@media (max-width: 1040px) {
+	.single-dropdowns {
+		min-width: 250px !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.search_bar {
+		width: 175px;
+	}
+}
+
+@media (max-width: 970px) and (min-width: 675px) {
+	.library-dropdowns {
+		/* display: flex; */
+		flex-direction: column;
+	}
+
+	.single-dropdowns {
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 646px) {
+	.single-dropdowns {
+		display: flex;
+		flex-direction: column;
+		min-width: fit-content !important;
+	}
+
+	.single-dropdowns div:last-child {
+		margin-top: 12px;
+	}
+
+	.search_bar {
+		width: 150px;
+	}
+
+	.search_button {
+		width: 22px;
+		height: 24px;
+	}
+}

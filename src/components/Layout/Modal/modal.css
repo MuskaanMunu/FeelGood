@@ -1,0 +1,63 @@
+/********************************** Team Page Modal ********************************/
+.modal-content {
+	background: hsla(0, 10%, 100%, 0.05) !important;
+	backdrop-filter: blur(36px) !important;
+	border: 1.7px solid hsla(0, 0%, 100%, 0.2) !important;
+	border-radius: 14px;
+	padding: 15px 30px 25px 30px;
+}
+
+.modal-backdrop {
+	background-color: rgb(16, 16, 16);
+	opacity: 0.85 !important;
+}
+
+.modal_member_image {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.modal_header_details {
+	margin: 25px 10px;
+	padding: 0 !important;
+}
+
+/* .modal-open {
+	overflow-y: scroll !important;
+} */
+
+.react-bootstrap-modal .modal-content {
+	padding: 25px 45px 40px 45px;
+}
+
+/* Error Modal */
+.error_modal_close {
+	border: none !important;
+	outline: none !important;
+	margin: 0 !important;
+	margin-top: -15px !important;
+	margin-right: -15px !important;
+	padding: 0 !important;
+	font-size: 0.9em;
+}
+
+.error_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.3em;
+	font-weight: 500;
+	color: rgb(203, 3, 0);
+}
+
+.error_modal_text {
+	font-family: var(--Poppins);
+	font-size: 0.8em;
+	font-weight: 400;
+	color: rgb(160, 160, 160);
+}
+
+.success_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #CFB53C;
+}
