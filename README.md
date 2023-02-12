@@ -1,4 +1,4 @@
-# Musicosmos
+# FeelGood
 
 <img src="./musicosmos_home.png" alt="FeelGood Home"/>
 
