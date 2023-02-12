@@ -1,0 +1,7 @@
+{
+    "SERVER_URL": "https://musicosmos-moonbeam.vercel.app",
+    "STREAM_API_KEY": "sgkqjvk4f3nz",
+    "BLOCKCHAIN": 1287,
+    "SPOTIFY_CLIENT_ID": "45dde73294d9439184dbc4149bf51e1f",
+    "SPOTIFY_CLIENT_SECRET": "eb5c07c676ff4eeea5544f931ff695e8"
+}
