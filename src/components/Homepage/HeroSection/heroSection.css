@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--Poppins: "Poppins", sans-serif;
+	--Roboto: "Roboto", sans-serif;
+}
+
+/**************************************************************************/
+/******************************    Hero    ********************************/
+/**************************************************************************/
+
+/*MEDIA QUERIES*/
+@media (max-width: 645px) {
+	.intro-text.intro-text.intro-text {
+		font-size: 1.15em;
+		font-weight: 400;
+	}
+
+	.music-card.music-card.music-card.music-card {
+		width: 85%;
+		height: 350px;
+		padding: 8px;
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+		/* use overflow when content needs to be cropped */
+		overflow-y: hidden;
+		overflow-x: hidden;
+		/* Added for centring elems */
+		align-items: center;
+	}
+
+	.music-card-text.music-card-text.music-card-text.music-card-text {
+		font-size: 1.48em;
+		margin-bottom: 15px;
+	}
+
+	.music-card.music-card.music-card img {
+		margin: 0;
+		width: 350px;
+	}
+
+	.about-us {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro-card.intro-card {
+		width: 85%;
+		padding: 40px 20px;
+		border-radius: 15px;
+	}
+
+	.intro-text.intro-text {
+		font-size: 1.45em;
+		font-weight: 400;
+	}
+
+	.brand-intro.brand-intro {
+		width: 85%;
+		padding-left: 15px;
+	}
+
+	.brand-intro.brand-intro h2 {
+		font-size: 1.9em;
+	}
+
+	.brand-intro.brand-intro p {
+		font-size: 0.9em;
+		max-width: 85%;
+	}
+
+	.music-card.music-card.music-card {
+		width: 85%;
+		height: 100px;
+		padding: 10px 0px;
+		border-radius: 15px;
+		margin-bottom: 35px;
+	}
+
+	.music-card-text.music-card-text.music-card-text {
+		padding-left: 30px;
+		font-size: 1.08em;
+	}
+
+	.music-card.music-card img {
+		margin-top: 0px;
+		width: 180px;
+	}
+
+	.about-us {
+		padding-left: 0 !important;
+	}
+}
+
+@media (max-width: 850px) {
+	.music-card.music-card {
+		padding-left: 30px;
+	}
+
+	.music-card-text.music-card-text {
+		font-size: 1.2em;
+		padding-left: 5px;
+	}
+}
+
+.hero-container {
+	width: 100vw;
+	background-image: url("../../../assets/hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+
+.hero-box {
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.hero-row {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.intro-card {
+	width: 80%;
+	border-radius: 20px;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+.intro-text {
+	color: #CFB53C;
+	font-family: var(--Poppins);
+	font-size: 1.8em;
+	font-weight: 400;
+}
+
+.brand-intro {
+	width: 80%;
+	padding-left: 20px;
+	text-align: left;
+	margin-top: 60px;
+}
+
+.brand-intro h2 {
+	font-family: var(--Poppins);
+	font-weight: 400;
+	font-size: 2.5em;
+}
+
+.brand-intro p {
+	max-width: 80%;
+	font-family: var(--Roboto);
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.music-card {
+	width: 80%;
+	height: 150px;
+	background-image: linear-gradient(to right, #458f08, #CFB53C);
+	border-radius: 20px;
+	padding-left: 50px;
+	margin-top: 75px;
+	display: flex;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	align-items: center;
+}
+
+.music-card-text {
+	padding-left: 15px;
+	color: #232323;
+	font-family: var(--Poppins);
+	font-size: 1.6em;
+	font-weight: 500;
+}
+
+.music-card img {
+	align-self: center;
+	margin: 0 55px 0 auto;
+	width: 300px;
+}
+
+.about-us {
+	width: 80%;
+	padding-left: 20px;
+	text-align: left;
+	margin-top: 45px;
+}
+
+.about-us p {
+	font-family: var(--Roboto);
+	font-weight: 400;
+	font-size: 1em;
+}
+
+p a {
+	text-decoration: none;
+	color: #c0276e;
+}

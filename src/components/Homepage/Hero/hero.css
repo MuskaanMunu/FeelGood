@@ -1,0 +1,32 @@
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-container-new {
+	/* background-image: url("../../../assets/hero-img-1.png"); */
+	/* background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	height: 90vh;
+	object-fit: contain;
+	/* width: 100vw; */
+	/* aspect-ratio: 2.742543709290367; */
+}
+
+@media (min-width: 769px){
+	.hero-container-new-m{
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-container-new{
+		display: none;
+	}
+	.hero-container-new-m{
+		max-width:100%;
+		height: auto;
+	}
+}
